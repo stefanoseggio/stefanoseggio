@@ -26,13 +26,13 @@ Five new Actors shipped this cycle, each targeting a compliance-data niche with 
 
 | Actor | What it does | Pricing (from) | Links |
 |---|---|---|---|
-| **AI Crawler & Content-Signal Permission Delta Monitor** | Delta-monitors `robots.txt` AI-crawler permissions (GPTBot, ClaudeBot, 16 others), Cloudflare Content-Signal headers, and `llms.txt` for changes | $0.006/event | [Repo](https://github.com/stefanoseggio/ai-crawler-content-signal-permission-monitor) · [Console](https://console.apify.com/actors/eWDx4XY54R5GXysFi) |
-| **Regione Lombardia Open Grants & Tenders Registry Delta Monitor** | Turns Regione Lombardia's Socrata `bandi` registry into a NEW_LISTING/STATUS_CHANGE/UPDATED delta feed | $0.008/event | [Repo](https://github.com/stefanoseggio/regione-lombardia-grants-registry-monitor) · [Console](https://console.apify.com/actors/f0xRlvzERsbgbU1ru) |
-| **SEC Enforcement & Litigation Release Delta Feed** | Structures SEC.gov's own litigation-release and administrative-proceeding RSS feeds into EDGAR CIK-linked records | $0.02/event | [Repo](https://github.com/stefanoseggio/sec-enforcement-litigation-delta-feed) · [Console](https://console.apify.com/actors/EDhT9Mvrdm2hzTECA) |
+| **AI Crawler & Content-Signal Permission Delta Monitor** | Delta-monitors `robots.txt` AI-crawler permissions (GPTBot, ClaudeBot, 16 others), Cloudflare Content-Signal headers, and `llms.txt` for changes | $0.006/event | [Repo](https://github.com/stefanoseggio/ai-crawler-content-signal-permission-monitor) · [Store](https://apify.com/stefano_seggio/ai-crawler-content-signal-permission-monitor) |
+| **Regione Lombardia Open Grants & Tenders Registry Delta Monitor** | Turns Regione Lombardia's Socrata `bandi` registry into a NEW_LISTING/STATUS_CHANGE/UPDATED delta feed | $0.008/event | [Repo](https://github.com/stefanoseggio/regione-lombardia-grants-registry-monitor) · [Store](https://apify.com/stefano_seggio/regione-lombardia-grants-registry-monitor) |
+| **SEC Enforcement & Litigation Release Delta Feed** | Structures SEC.gov's own litigation-release and administrative-proceeding RSS feeds into EDGAR CIK-linked records | $0.02/event | [Repo](https://github.com/stefanoseggio/sec-enforcement-litigation-delta-feed) · [Store](https://apify.com/stefano_seggio/sec-enforcement-litigation-delta-feed) |
 | **KIPRIS Patent & Trademark Status-Change Monitor** | Bring-your-own-key delta monitoring for Korean patent/utility-model filings on KIPRIS Plus | $0.008/event | [Repo](https://github.com/stefanoseggio/kipris-patent-trademark-status-monitor) · [Console](https://console.apify.com/actors/9Wg73rplxFqgVq6fY) |
-| **Aozora Bunko New Public-Domain Text Delta Feed** | Live delta feed of newly digitized, confirmed-public-domain Japanese literature for NLP/digital-humanities pipelines | $0.01/event | [Repo](https://github.com/stefanoseggio/aozora-bunko-public-domain-text-feed) · [Console](https://console.apify.com/actors/K0XRDbUteacQL3jeF) |
+| **Aozora Bunko New Public-Domain Text Delta Feed** | Live delta feed of newly digitized, confirmed-public-domain Japanese literature for NLP/digital-humanities pipelines | $0.01/event | [Repo](https://github.com/stefanoseggio/aozora-bunko-public-domain-text-feed) · [Store](https://apify.com/stefano_seggio/aozora-bunko-public-domain-text-feed) |
 
-> These five are currently private on Apify Console while they complete Store review — the Console links above work for the owner today; public Store links go live on publication.
+> Four of these five are now live on the Apify Store. KIPRIS Patent & Trademark Status-Change Monitor remains private — a platform-side publish error is currently blocking activation; the Console link above works for the owner in the meantime.
 
 ## The Full Fleet
 
