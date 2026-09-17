@@ -4,7 +4,7 @@
 
 ### Founder, Delta Registry — Pay-Per-Event Regulatory & Compliance Data Infrastructure
 
-**24 live Apify Actors · 32 open-source repositories · Buenos Aires, Argentina**
+**28 live Apify Actors · 38 open-source repositories · Buenos Aires, Argentina**
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/in/stefanoseggio-deltaregistry)
 [![Apify Store](https://img.shields.io/badge/Apify%20Store-View%20Fleet-FF9012?style=for-the-badge&logo=apify&logoColor=white)](https://apify.com/stefano_seggio)
@@ -16,7 +16,7 @@
 
 ## Executive Summary
 
-Delta Registry is a pay-per-event (PPE) data infrastructure operation: 24 hosted Apify Actors that turn government registries, regulatory feeds, and compliance-adjacent public data sources into structured, delta-aware event streams. Every actor in the fleet shares the same design discipline — a dual-fingerprint (or hash-based) delta engine that tracks state across runs, a documented Pay-Per-Event pricing model billed only for genuinely new or changed records, zero-infrastructure hosting on Apify's platform, and honest, disclosed limitations rather than smoothed-over marketing copy. The fleet spans five practice areas: government procurement and grants, regulatory enforcement and litigation, patent and trademark monitoring, sanctions and compliance screening, and AI/content infrastructure.
+Delta Registry is a pay-per-event (PPE) data infrastructure operation: 28 hosted Apify Actors that turn government registries, regulatory feeds, and compliance-adjacent public data sources into structured, delta-aware event streams. Every actor in the fleet shares the same design discipline — a dual-fingerprint (or hash-based) delta engine that tracks state across runs, a documented Pay-Per-Event pricing model billed only for genuinely new or changed records, zero-infrastructure hosting on Apify's platform, and honest, disclosed limitations rather than smoothed-over marketing copy. The fleet spans six practice areas: government procurement and grants, regulatory enforcement and litigation, patent and trademark monitoring, sanctions and compliance screening, AI/content infrastructure, and financial markets/sovereign debt.
 
 This profile is the entry point to the whole fleet. Every listing below links to either a real, open-source integration repository (README, architecture diagram, Node.js/Python SDK snippets) or, for actors not yet mirrored to their own repository, directly to the live Apify Store listing.
 
@@ -32,7 +32,20 @@ Five new Actors shipped this cycle, each targeting a compliance-data niche with 
 | **KIPRIS Patent & Trademark Status-Change Monitor** | Bring-your-own-key delta monitoring for Korean patent/utility-model filings on KIPRIS Plus | $0.008/event | [Repo](https://github.com/stefanoseggio/kipris-patent-trademark-status-monitor) · [Console](https://console.apify.com/actors/9Wg73rplxFqgVq6fY) |
 | **Aozora Bunko New Public-Domain Text Delta Feed** | Live delta feed of newly digitized, confirmed-public-domain Japanese literature for NLP/digital-humanities pipelines | $0.01/event | [Repo](https://github.com/stefanoseggio/aozora-bunko-public-domain-text-feed) · [Store](https://apify.com/stefano_seggio/aozora-bunko-public-domain-text-feed) |
 
-> Four of these five are now live on the Apify Store. KIPRIS Patent & Trademark Status-Change Monitor remains private — a platform-side publish error is currently blocking activation; the Console link above works for the owner in the meantime.
+> All five are now live on the Apify Store. KIPRIS Patent & Trademark Status-Change Monitor's earlier platform-side publish error has since cleared — it's public as of 2026-09-17; [Store](https://apify.com/stefano_seggio/kipris-patent-trademark-status-monitor) replaces the Console-only link above.
+
+## Featured — 2026-09-17 Institutional Fleet Expansion
+
+Four new Actors shipped this cycle, extending the fleet into public procurement (EU-wide), UK statutory compliance, sovereign-debt markets, and Gulf corporate registries:
+
+| Actor | What it does | Pricing (from) | Links |
+|---|---|---|---|
+| **EU TED Procurement Delta Monitor** | Delta-tracks EU public procurement notices — new tenders, contract awards, status changes — across all 27 member states via TED's official public Search API | $0.01/event | [Repo](https://github.com/stefanoseggio/eu-ted-procurement-delta-monitor) · [Store](https://apify.com/stefano_seggio/eu-ted-procurement-delta-monitor) |
+| **UK Modern Slavery Statement Registry Delta Monitor** | Delta-tracks the official UK Modern Slavery Statement Registry — 34,000+ organisations — for new statements, compliance-status changes, and missing mandatory disclosures | $0.01/event | [Repo](https://github.com/stefanoseggio/uk-modern-slavery-statement-registry-monitor) · [Store](https://apify.com/stefano_seggio/uk-modern-slavery-statement-registry-monitor) |
+| **Emerging-Market Sovereign Debt Auction Monitor** | Delta-tracks Brazil's National Treasury domestic bond auction results (LTN, LFT, NTN-B, NTN-F) for new auctions and marginal-rate/coverage-ratio anomalies | $0.01/event | [Repo](https://github.com/stefanoseggio/emerging-market-sovereign-debt-auction-monitor) · [Store](https://apify.com/stefano_seggio/emerging-market-sovereign-debt-auction-monitor) |
+| **UAE Corporate Registry Monitor** | Delta-tracks UAE corporate registrations and license-status changes across Dubai mainland (Dubai Pulse), ADGM, and DIFC public registers | $0.01/event | [Repo](https://github.com/stefanoseggio/uae-corporate-registry-monitor) · [Store](https://apify.com/stefano_seggio/uae-corporate-registry-monitor) |
+
+> All four are live on the Apify Store as of 2026-09-17. Honest status note: ADGM and DIFC (two of the UAE actor's three data sources) are currently affected by live, ongoing outages on those registries' own servers (a NullPointerException on ADGM's side, an HTTP 500 on DIFC's) — confirmed independently, unrelated to this actor's code, and being monitored via a standalone health probe shipped in that actor's own repository.
 
 ## The Full Fleet
 
@@ -50,6 +63,13 @@ Five new Actors shipped this cycle, each targeting a compliance-data niche with 
 | Salta Compras Monitor | Province of Salta, Argentina — public tenders | [Repo](https://github.com/stefanoseggio/salta-compras-monitor) |
 | Tucuman Compras Monitor | Province of Tucuman, Argentina — public tenders | [Repo](https://github.com/stefanoseggio/tucuman-compras-monitor) |
 | Santa Fe Compras Monitor | Province of Santa Fe, Argentina — public tenders | [Repo](https://github.com/stefanoseggio/santafe-compras-monitor) |
+| EU TED Procurement Delta Monitor | TED (Tenders Electronic Daily) — new tenders, contract awards, status changes across all 27 EU member states | [Repo](https://github.com/stefanoseggio/eu-ted-procurement-delta-monitor) |
+
+### Financial Markets & Sovereign Debt
+
+| Actor | Coverage | Repository |
+|---|---|---|
+| Emerging-Market Sovereign Debt Auction Monitor | Brazil National Treasury bond auctions (LTN, LFT, NTN-B, NTN-F) — new auctions, rate/coverage anomalies | [Repo](https://github.com/stefanoseggio/emerging-market-sovereign-debt-auction-monitor) |
 
 ### Regulatory Enforcement, Litigation & Compliance
 
@@ -62,7 +82,9 @@ Five new Actors shipped this cycle, each targeting a compliance-data niche with 
 | Patent & IP Enforcement Monitor | USPTO PTAB + EPO OPS, with a dedicated TERMINATED signal | [Repo](https://github.com/stefanoseggio/actor-21-patent-ip-enforcement-monitor) |
 | Drug Safety & Recalls Monitor | FDA openFDA recalls + EMA DHPC safety alerts | [Repo](https://github.com/stefanoseggio/actor-22-drug-safety-recalls-monitor) |
 | Diario Oficial Chile Monitor | Chile's official gazette — laws, decrees, resolutions | [Repo](https://github.com/stefanoseggio/diario-oficial-cl-monitor) |
-| Singapore ACRA Registry Monitor | Singapore corporate registry — new listings/status changes | Private — pending Apify Store publication |
+| Singapore ACRA Registry Monitor | Singapore corporate registry — new listings/status changes | [Repo](https://github.com/stefanoseggio/singapore-acra-registry-monitor) |
+| UK Modern Slavery Statement Registry Delta Monitor | UK Modern Slavery Statement Registry — new statements, compliance-status changes, missing disclosures | [Repo](https://github.com/stefanoseggio/uk-modern-slavery-statement-registry-monitor) |
+| UAE Corporate Registry Monitor | Dubai mainland (Dubai Pulse), ADGM, and DIFC — new registrations, license-status changes | [Repo](https://github.com/stefanoseggio/uae-corporate-registry-monitor) |
 
 ### Patent, Trademark & Clinical Data
 
