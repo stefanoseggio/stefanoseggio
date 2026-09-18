@@ -29,10 +29,10 @@ Five new Actors shipped this cycle, each targeting a compliance-data niche with 
 | **AI Crawler & Content-Signal Permission Delta Monitor** | Delta-monitors `robots.txt` AI-crawler permissions (GPTBot, ClaudeBot, 16 others), Cloudflare Content-Signal headers, and `llms.txt` for changes | $0.006/event | [Repo](https://github.com/stefanoseggio/ai-crawler-content-signal-permission-monitor) · [Store](https://apify.com/stefano_seggio/ai-crawler-content-signal-permission-monitor) |
 | **Regione Lombardia Open Grants & Tenders Registry Delta Monitor** | Turns Regione Lombardia's Socrata `bandi` registry into a NEW_LISTING/STATUS_CHANGE/UPDATED delta feed | $0.008/event | [Repo](https://github.com/stefanoseggio/regione-lombardia-grants-registry-monitor) · [Store](https://apify.com/stefano_seggio/regione-lombardia-grants-registry-monitor) |
 | **SEC Enforcement & Litigation Release Delta Feed** | Structures SEC.gov's own litigation-release and administrative-proceeding RSS feeds into EDGAR CIK-linked records | $0.02/event | [Repo](https://github.com/stefanoseggio/sec-enforcement-litigation-delta-feed) · [Store](https://apify.com/stefano_seggio/sec-enforcement-litigation-delta-feed) |
-| **KIPRIS Patent & Trademark Status-Change Monitor** | Bring-your-own-key delta monitoring for Korean patent/utility-model filings on KIPRIS Plus | $0.008/event | [Repo](https://github.com/stefanoseggio/kipris-patent-trademark-status-monitor) · [Console](https://console.apify.com/actors/9Wg73rplxFqgVq6fY) |
+| **KIPRIS Patent & Trademark Status-Change Monitor** | Bring-your-own-key delta monitoring for Korean patent/utility-model filings on KIPRIS Plus | $0.008/event | [Repo](https://github.com/stefanoseggio/kipris-patent-trademark-status-monitor) · [Store](https://apify.com/stefano_seggio/kipris-patent-trademark-status-monitor) |
 | **Aozora Bunko New Public-Domain Text Delta Feed** | Live delta feed of newly digitized, confirmed-public-domain Japanese literature for NLP/digital-humanities pipelines | $0.01/event | [Repo](https://github.com/stefanoseggio/aozora-bunko-public-domain-text-feed) · [Store](https://apify.com/stefano_seggio/aozora-bunko-public-domain-text-feed) |
 
-> All five are now live on the Apify Store. KIPRIS Patent & Trademark Status-Change Monitor's earlier platform-side publish error has since cleared — it's public as of 2026-09-17; [Store](https://apify.com/stefano_seggio/kipris-patent-trademark-status-monitor) replaces the Console-only link above.
+> All five are now live on the Apify Store. KIPRIS Patent & Trademark Status-Change Monitor's earlier platform-side publish error cleared and it went public on 2026-09-17.
 
 ## Featured — 2026-09-17 Institutional Fleet Expansion
 
@@ -91,7 +91,7 @@ Four new Actors shipped this cycle, extending the fleet into public procurement 
 | Actor | Coverage | Repository |
 |---|---|---|
 | KIPRIS Patent & Trademark Status-Change Monitor | Korean patent/utility-model filings (BYOK) | [Repo](https://github.com/stefanoseggio/kipris-patent-trademark-status-monitor) |
-| Clinical Trials Delta Engine | ClinicalTrials.gov API v2 — new/updated trial records | [Apify Store](https://apify.com/stefano_seggio/actor-24-clinical-trials-delta-engine) · [Sample stub](https://github.com/stefanoseggio/delta-registry-clinicaltrials-full-stub) |
+| Clinical Trials Delta Engine | ClinicalTrials.gov API v2 + FDA Orange Book — trial status and patent/exclusivity delta feed | [Repo](https://github.com/stefanoseggio/actor-24-clinical-trials-delta-engine) · [Apify Store](https://apify.com/stefano_seggio/actor-24-clinical-trials-delta-engine) · [Sample stub](https://github.com/stefanoseggio/delta-registry-clinicaltrials-full-stub) |
 
 ### AI Infrastructure, Content & Lead Generation
 
@@ -122,11 +122,11 @@ Four new Actors shipped this cycle, extending the fleet into public procurement 
 
 <div align="center">
 
-![Stefano's GitHub stats](https://github-readme-stats.vercel.app/api?username=stefanoseggio&show_icons=true&theme=tokyonight&hide_border=true&count_private=true)
-![Top Languages](https://github-readme-stats.vercel.app/api/top-langs/?username=stefanoseggio&layout=compact&theme=tokyonight&hide_border=true)
 ![GitHub Streak](https://github-readme-streak-stats.herokuapp.com/?user=stefanoseggio&theme=tokyonight&hide_border=true)
 
 </div>
+
+<!-- Note: the github-readme-stats.vercel.app badges (contribution stats, top languages) are omitted — the shared public Vercel deployment is currently returning DEPLOYMENT_PAUSED for all users, verified 2026-09-18. Re-add once that instance is back, or switch to a self-hosted deployment. -->
 
 ## Stack
 
