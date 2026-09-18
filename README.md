@@ -18,7 +18,7 @@
 
 Delta Registry is a pay-per-event (PPE) data infrastructure operation: 28 hosted Apify Actors that turn government registries, regulatory feeds, and compliance-adjacent public data sources into structured, delta-aware event streams. Every actor in the fleet shares the same design discipline — a dual-fingerprint (or hash-based) delta engine that tracks state across runs, a documented Pay-Per-Event pricing model billed only for genuinely new or changed records, zero-infrastructure hosting on Apify's platform, and honest, disclosed limitations rather than smoothed-over marketing copy. The fleet spans six practice areas: government procurement and grants, regulatory enforcement and litigation, patent and trademark monitoring, sanctions and compliance screening, AI/content infrastructure, and financial markets/sovereign debt.
 
-This profile is the entry point to the whole fleet. Every listing below links to either a real, open-source integration repository (README, architecture diagram, Node.js/Python SDK snippets) or, for actors not yet mirrored to their own repository, directly to the live Apify Store listing.
+This profile is the entry point to the whole fleet. Every listing below links to either a real, open-source integration repository (README plus working Node.js and Python `apify-client` examples under `examples/`, with an architecture diagram on most) or, for actors not yet mirrored to their own repository, directly to the live Apify Store listing.
 
 ## Featured — 2026-09 Fleet Expansion
 
